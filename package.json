@@ -1,0 +1,46 @@
+{
+	"name": "gymmentor",
+	"version": "1.1.71",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"and": "react-native run-android",
+		"cleanrun": "cd android&&gradlew clean&&cd..&&react-native run-android",
+		"andrelease": "react-native run-android --variant=release",
+		"build": "cd android&&gradlew assembleRelease&&cd..",
+		"cleanbuild": "cd android&&gradlew clean&&gradlew assembleRelease&&cd.."
+	},
+	"dependencies": {
+		"native-base": "^2.11.0",
+		"react": "16.4.1",
+		"react-native": "0.55.4",
+		"react-native-circular-progress": "^0.2.0",
+		"react-native-easy-grid": "^0.1.17",
+		"react-native-google-cast": "^3.0.5",
+		"react-native-image-crop-picker": "^0.20.3",
+		"react-native-keep-awake": "^3.0.1",
+		"react-native-onesignal": "3.2.12",
+		"react-native-orientation": "^3.1.3",
+		"react-native-swiper": "^1.5.13",
+		"react-native-video": "3.2.1",
+		"rn-fetch-blob": "^0.10.15",
+		"react-navigation": "^2.18.3",
+		"react-native-gesture-handler": "^1.0.15"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-jest": "22.4.3",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "22.4.3",
+		"react-test-renderer": "16.2.0"
+	},
+	"jest": {
+		"preset": "react-native"
+	},
+	"rnpm": {
+		"assets": [
+			"./assets/fonts"
+		]
+	}
+}
